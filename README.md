@@ -14,7 +14,7 @@ http://openweathermap.org/
 
 ### Run the Project
 
-+ Clone this repo ``
++ Clone this repo `https://github.com/fernandocarelle/react-weatherApp.git`
 + `cd react-weather-app`
 + run `npm install`
 + Get your API key from http://openweathermap.org/
