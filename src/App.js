@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Icon from '@material-ui/icons/Search';
 
 const api = {
   key: "9eebcb1743e1aa78976bc9b3b4ef30e2",
@@ -18,9 +19,17 @@ function App() {
         .then(result => {
           setWeather(result);
           setQuery('');
-          console.log(result);
         });
     }
+  }
+
+ function handleClick() {
+    fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        .then(res => res.json())
+        .then(result => {
+          setWeather(result);
+          setQuery('');
+        });
   }
 
   const datebuilder = (d) => {
@@ -49,6 +58,7 @@ function App() {
             value={query}
             onKeyPress={search}
           />
+          <button className="btn" onClick={handleClick}><Icon>SearchIcon</Icon></button>
         </div>
         {(typeof weather.main != "undefined") ? (
           <div>

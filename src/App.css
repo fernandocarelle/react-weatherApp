@@ -116,3 +116,30 @@ main {
 .copyright a:visited {
   color: #FFF;
 }
+
+.btn {
+  display: block;
+  width: 8%;
+  float: right;
+  margin-right: 25px;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -55px;
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #FFF;
+}
