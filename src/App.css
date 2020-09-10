@@ -101,3 +101,18 @@ main {
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
+
+.copyright {
+  margin-top: 80vh;
+  text-align: center;
+  color: #FFF;
+}
+
+.copyright a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.copyright a:visited {
+  color: #FFF;
+}

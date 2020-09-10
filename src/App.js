@@ -28,7 +28,7 @@ function App() {
     let days = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
 
     /* let today = new Date().toLocaleDateString() */
-    
+
     let day = days[d.getDay()];
     let date = d.getDate();
     let month = months[d.getMonth()];
@@ -61,10 +61,16 @@ function App() {
                 {Math.round(weather.main.temp)}°c
               </div>
               {/* <div className="weather">{weather.weather[0].main}</div> */}
+
             </div>
 
+
           </div>
-          ) : ('')}
+        ) : ('')}
+
+        <div className="copyright">
+          <p>&copy; Copyright 2020 <a href="https://www.linkedin.com/in/fernandocode/" target="blank">Fernando Carelle</a></p>
+        </div>
 
       </main>
 
