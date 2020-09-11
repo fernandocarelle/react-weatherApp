@@ -102,6 +102,10 @@ main {
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
 
+.weather img {
+  width: 150px;
+}
+
 .copyright {
   margin-top: 80vh;
   text-align: center;

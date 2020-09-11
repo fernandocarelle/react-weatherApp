@@ -14,12 +14,7 @@ function App() {
 
   const search = evt => {
     if (evt.key === "Enter") {
-      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
-        .then(res => res.json())
-        .then(result => {
-          setWeather(result);
-          setQuery('');
-        });
+      handleClick()
     }
   }
 
@@ -70,6 +65,7 @@ function App() {
               <div className="temp">
                 {Math.round(weather.main.temp)}°c
               </div>
+              <div className="weather"><img src={`http://api.openweathermap.org/img/w/${weather.weather[0].icon}.png`} /></div>
               {/* <div className="weather">{weather.weather[0].main}</div> */}
 
             </div>
